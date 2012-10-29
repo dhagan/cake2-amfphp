@@ -40,5 +40,6 @@ path changes
 changed underscore() -> camelize() in 2 places 
 
 
-brower - broken
+browser - broken
+
 xdebug - didn't get it to work, it worked in 1.5
