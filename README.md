@@ -27,9 +27,9 @@ web/app/Plugin/Cpamf/Controller/CpamfController.php::gatewway()
 
 app/Config/bootstrap
 
-/**
- * Path to the application's controllers directory.
- */
+
+// Path to the application's controllers directory.
+
   define('CONTROLLERS', APP.'controllers'.DS);
 
 
