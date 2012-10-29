@@ -5,13 +5,21 @@ Migrate http://carrotplant.com/en/blog/cpamf-v011-released v0.12 to cakephp 2.3.
 
 use the endpoint http://localhost/cpamf/cpamf/gateway 
 
-Migration - I had a working copy in cakephp 1.5 and then migrated it to 2.3.x
+Migration - This is what I did
+-------------------------------
+I had a working copy in cakephp 1.5 and then migrated it to 2.3.x, I debugged the working 1.5 flow until 
+I could get the 2.3.x to work.  The NetBeans 7.x debugger was extremely useful.
 
-Apologies up front for the spoty notes and lack of checkin.  The first thing I did was camelized the models and controllers.
-Sorry for not committing along the way, this was project was taken on spec, and not yet proven out.
+Apologies up front for the spotty notes and lack of checkins along the way. I'm pretty certain the 
+upper casing of file names would have cause havoc with git on Win32.  
+The first thing I did was camelized the models and controllers.
 
-Here are the steps 
----------------------
+I did this project on spec, and not yet proven out for any of my paying clients.
+
+Here are some of the changes
+----------------------------
+
+Used cake bake to create the plugin directory structure
 
 did I add this or did cake bake plugin, sorry, can't recall 
 web/app/Config/bootstrap.php:: CakePlugin::load('Cpamf', array('bootstrap' => false, 'routes' => false));
