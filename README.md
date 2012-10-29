@@ -21,12 +21,11 @@ Here are some of the changes
 
 Used cake bake to create the plugin directory structure
 
-did I add this or did cake bake plugin, sorry, can't recall 
+# did I add this or did cake bake plugin, sorry, can't recall 
+ web/app/Config/bootstrap.php:: CakePlugin::load('Cpamf', array('bootstrap' => false, 'routes' => false));
 
-* web/app/Config/bootstrap.php:: CakePlugin::load('Cpamf', array('bootstrap' => false, 'routes' => false));
 
-
-* web/app/Plugin/Cpamf/Controller/CpamfController.php::gatewway()
+# web/app/Plugin/Cpamf/Controller/CpamfController.php::gatewway()
   function gateway()
 	{
 	    // DJH removed 'php' from cake_gateway
@@ -34,7 +33,7 @@ did I add this or did cake bake plugin, sorry, can't recall
 	}
 
 
-* app/Config/bootstrap
+# app/Config/bootstrap
 
 
 // Path to the application's controllers directory.
@@ -42,13 +41,12 @@ did I add this or did cake bake plugin, sorry, can't recall
   define('CONTROLLERS', APP.'controllers'.DS);
 
 
-* web/app/Plugin/Cpamf/Vendor/amfphp/core/cakeamf/app/CakeAction.php
+# web/app/Plugin/Cpamf/Vendor/amfphp/core/cakeamf/app/CakeAction.php
 
 search for comments // DJH
 path changes
 changed underscore() -> camelize() in 2 places 
 
+# browser - broken
 
-browser - broken
-
-xdebug - didn't get it to work, it worked in 1.5
+# xdebug - didn't get it to work, it worked in 1.5
