@@ -21,7 +21,8 @@ Here are some of the changes
 
 Used cake bake to create the plugin directory structure
 
-# did I add this or did cake bake plugin, sorry, can't recall 
+# web/app/Config/bootstrap.php
+did I add this or did cake bake plugin, sorry, can't recall 
  web/app/Config/bootstrap.php:: CakePlugin::load('Cpamf', array('bootstrap' => false, 'routes' => false));
 
 
@@ -49,4 +50,4 @@ changed underscore() -> camelize() in 2 places
 
 # browser - broken
 
-# xdebug - didn't get it to work, it worked in 1.5
+# xdebug - works with NetBeans 7
